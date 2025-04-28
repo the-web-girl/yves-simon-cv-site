@@ -1,1 +1,67 @@
-/*# sourceMappingURL=style.css.map */
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color: #fff;
+  --color-txt: #000;
+  --blue: #0b0086;
+  --light-grey: #E0E0E0;
+  --yellow-sweet: #FFD369;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "verdana", Arial, sans-serif;
+  font-size: 1em;
+  margin: 0 auto;
+  max-width: 1000px;
+  border: solid 3px var(--color-txt);
+}
+
+header {
+  width: 100%;
+}
+header .flex {
+  display: flex;
+}
+header .flex #head_photo {
+  flex: 1;
+  background-color: var(--blue);
+}
+header .flex #head_photo .vp_photo {
+  margin: 15% auto;
+  height: 150px;
+  width: 150px;
+  border: solid black 1px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0 0 25px 0;
+}
+header .flex #head_photo .vp_photo #photo {
+  width: 110%;
+  margin-top: -10px;
+  margin-left: -15px;
+}
+header .flex #name {
+  flex: 2;
+  background-color: var(--light-grey);
+}
+header .flex #name h1 {
+  padding-top: 10%;
+  margin: 0;
+  font-size: 3.5em;
+  text-transform: uppercase;
+}
+header .flex #name h1 .blue {
+  color: var(--blue);
+}
+header .flex #name h2 {
+  margin-bottom: 5%;
+  margin-top: 0%;
+  font-size: 2.5rem;
+}
+header .flex #name h2 #border_dev {
+  border-bottom: var(--yellow-sweet) 2px solid;
+}/*# sourceMappingURL=style.css.map */
