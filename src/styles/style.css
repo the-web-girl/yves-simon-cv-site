@@ -19,6 +19,9 @@ body {
   max-width: 1000px;
   border: solid 3px var(--color-txt);
 }
+body .flex {
+  display: flex;
+}
 
 header {
   width: 100%;
@@ -34,7 +37,7 @@ header .flex #head_photo .vp_photo {
   margin: 15% auto;
   height: 150px;
   width: 150px;
-  border: solid black 1px;
+  border: solid var(--yellow-sweet) 2px;
   border-radius: 50%;
   overflow: hidden;
   padding: 0 0 25px 0;
@@ -64,4 +67,62 @@ header .flex #name h2 {
 }
 header .flex #name h2 #border_dev {
   border-bottom: var(--yellow-sweet) 2px solid;
+}
+
+#my_contact {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: var(--blue);
+  color: var(--bg-color);
+}
+#my_contact .aside h3 {
+  color: var(--bg-color);
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2% 0%;
+  margin-bottom: 0;
+}
+#my_contact .aside p {
+  padding: 0 10%;
+}
+#my_contact .aside p .bold {
+  font-weight: bold;
+}
+#my_contact .aside .hobbies {
+  text-align: center;
+  font-size: 2em;
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#my_contact .aside .hobbies img {
+  border: 2px solid var(--color-txt);
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#my_contact #contact h3 {
+  margin-top: 0;
+}
+#my_contact #contact a {
+  text-decoration: none;
+  color: var(--light-grey);
+  -webkit-text-decoration: underline var(--yellow-sweet);
+          text-decoration: underline var(--yellow-sweet);
+}
+#my_contact #contact a:hover {
+  color: var(--yellow-sweet);
+}
+#my_contact .flex-grow {
+  flex-grow: 3;
+}
+#my_contact .flex-grow p {
+  font-weight: 500;
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */
