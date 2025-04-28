@@ -1,0 +1,85 @@
+// RESET
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+// COLOR
+:root {
+    --bg-color: #fff;
+    --color-txt : #000;
+    --blue : #0b0086;
+    --light-grey: #E0E0E0;
+    --yellow-sweet: #FFD369;
+
+}
+
+// BODY
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'verdana', Arial, sans-serif;
+    font-size: 1em;
+
+    margin: 0 auto;
+    max-width: 1000px;
+
+    border: solid 3px var(--color-txt);
+}
+
+
+// HEADER
+header {
+    width: 100%;
+
+    .flex {
+        display: flex;
+
+        #head_photo {
+            flex: 1;
+            background-color: var(--blue);
+
+            .vp_photo {
+                margin: 15% auto;
+                height: 150px;
+                width: 150px;
+                border: solid black 1px;
+                border-radius: 50%;
+                overflow: hidden;
+                padding: 0 0 25px 0;
+
+                #photo {
+                    width: 110%;
+                    margin-top: -10px;
+                    margin-left: -15px;
+                }
+            }
+
+        }
+
+        #name {
+            flex: 2;
+            background-color: var(--light-grey);
+
+            h1 {
+                padding-top: 10%;
+                margin: 0;
+                font-size: 3.5em;
+                text-transform: uppercase;
+
+                .blue {
+                    color: var(--blue);
+                }
+            }
+
+            h2 {
+                margin-bottom: 5%;
+                margin-top: 0%;
+                font-size: 2.5rem;
+
+                #border_dev {
+                    border-bottom: var(--yellow-sweet) 2px solid;
+                }
+            }
+
+        }
+    }
+}
