@@ -22,6 +22,15 @@ body {
 body .flex {
   display: flex;
 }
+body main, body #name {
+  padding: 0 5%;
+}
+body h4 {
+  font-size: 1.2em;
+  margin: 0;
+  padding: 4% 0;
+  color: var(--blue);
+}
 
 header {
   width: 100%;
@@ -76,6 +85,9 @@ header .flex #name h2 #border_dev {
   background-color: var(--blue);
   color: var(--bg-color);
 }
+#my_contact .aside {
+  margin: 3rem 0;
+}
 #my_contact .aside h3 {
   color: var(--bg-color);
   text-align: center;
@@ -98,7 +110,7 @@ header .flex #name h2 #border_dev {
   justify-content: space-around;
 }
 #my_contact .aside .hobbies img {
-  border: 2px solid var(--color-txt);
+  border: 2px solid var(--yellow-sweet);
   width: 50px;
   height: 50px;
   text-align: center;
@@ -125,4 +137,45 @@ header .flex #name h2 #border_dev {
 #my_contact .flex-grow p {
   font-weight: 500;
   font-size: 18px;
+}
+
+main {
+  flex: 2;
+  background: url("../img/fond-livres.png");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+main #formations h3, main #experience h3, main #recom h3 {
+  font-size: 1.3em;
+  padding-top: 3%;
+  margin-top: 0;
+  margin-bottom: 1%;
+  text-transform: uppercase;
+}
+main .border-h2 {
+  border-bottom: 2px solid var(--yellow-sweet);
+  margin-bottom: 2%;
+}
+main .border-h2 .px1 {
+  padding-right: 1rem;
+}
+main .border-h2 .px2 {
+  font-size: 0.5em;
+  padding-right: 1rem;
+}
+main article {
+  display: flex;
+  flex-direction: row;
+}
+main article .flex-date {
+  flex: 1;
+}
+main article .flex-date .align-date {
+  display: inline-flex;
+}
+main article .comp {
+  flex: 2;
+  margin-left: 2%;
 }/*# sourceMappingURL=style.css.map */
