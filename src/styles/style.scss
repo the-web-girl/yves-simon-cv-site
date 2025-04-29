@@ -120,21 +120,33 @@ header {
     .aside {
 
         margin: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
         h3 {
             // background-color: #02310b;
             color: var(--bg-color);
+            // display: flex;
             text-align: center;
+            // align-items: center;
             text-transform: uppercase;
             padding:  2% 0%;
             margin-bottom: 0;
         }
+
         p {
             padding: 0 10%;
+            text-align: center;
 
             .bold {
                 font-weight: bold;
             }
+        }
+
+        ul {
+            list-style: none;
+            text-align: center;
         }
 
         .hobbies {
@@ -175,7 +187,7 @@ header {
     }
 
     .flex-grow {
-        flex-grow: 3;
+        // flex-grow: 3;
 
         p {
             font-weight: 500;
@@ -274,6 +286,7 @@ main {
 
         #my_contact {
             // order: 3;
+            display: flex;
 
             #contact {
                 text-align: center;
@@ -289,6 +302,7 @@ main {
             display: flex;
             text-align: center;
             align-items: center;
+            justify-content: center;
 
             img {
                 width: 30px;
