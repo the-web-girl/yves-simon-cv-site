@@ -17,6 +17,7 @@ body {
   font-size: 1em;
   margin: 0 auto;
   max-width: 1000px;
+  height: 100%;
   border: solid 3px var(--color-txt);
 }
 body .flex {
@@ -42,7 +43,7 @@ header .flex #head_photo {
   flex: 1;
   background-color: var(--blue);
 }
-header .flex #head_photo .vp_photo {
+header .flex #head_photo .vp-photo {
   margin: 15% auto;
   height: 150px;
   width: 150px;
@@ -51,7 +52,7 @@ header .flex #head_photo .vp_photo {
   overflow: hidden;
   padding: 0 0 25px 0;
 }
-header .flex #head_photo .vp_photo #photo {
+header .flex #head_photo .vp-photo #photo {
   width: 110%;
   margin-top: -10px;
   margin-left: -15px;
@@ -144,7 +145,6 @@ main {
   background: url("../img/fond-livres.png");
   background-position: center;
   background-size: cover;
-  height: 100vh;
   width: 100%;
 }
 main #formations h3, main #experience h3, main #recom h3 {
@@ -178,4 +178,30 @@ main article .flex-date .align-date {
 main article .comp {
   flex: 2;
   margin-left: 2%;
+}
+
+@media screen and (max-width: 768px) {
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .flex #head_photo {
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .flex #head_photo .vp-photo {
+    margin: auto;
+  }
+  .flex #head_photo .vp-photo #photo {
+    width: 110%;
+    margin-top: -10px;
+    margin-left: -15px;
+  }
+  .flex #name {
+    width: 100%;
+    padding-top: 3%;
+  }
 }/*# sourceMappingURL=style.css.map */

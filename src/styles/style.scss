@@ -21,6 +21,7 @@ body {
 
     margin: 0 auto;
     max-width: 1000px;
+    height: 100%;
 
     border: solid 3px var(--color-txt);
 
@@ -54,7 +55,7 @@ header {
             flex: 1;
             background-color: var(--blue);
 
-            .vp_photo {
+            .vp-photo {
                 margin: 15% auto;
                 height: 150px;
                 width: 150px;
@@ -183,7 +184,7 @@ main {
     background: url('../img/fond-livres.png');
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    // height: 100vh;
     width: 100%;
 
     #formations h3, #experience h3, #recom h3 {
@@ -225,4 +226,34 @@ main {
         }
 	}
 
+}
+
+@media screen and (max-width: 768px) {
+    .flex {
+        display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+
+        #head_photo {
+            width: 100%;
+			padding-top: 5%;
+			padding-bottom: 5%;
+
+            .vp-photo {
+                margin: auto;
+
+                #photo {
+                    width: 110%;
+                    margin-top: -10px;
+                    margin-left: -15px;
+                }
+            }
+        }
+
+        #name {
+            width: 100%;
+            padding-top: 3%;
+        }
+    }
 }
