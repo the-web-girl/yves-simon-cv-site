@@ -222,13 +222,14 @@ main {
             text-align: center;
             align-items: center;
 
-            img {
-                width: 45px;
-            }
         }
 
         .px1 {
             padding-right: 1rem;
+
+            img {
+                width: 45px;
+            }
         }
 
         .px2 {
@@ -254,8 +255,35 @@ main {
         }
 	}
 
+    #reco_global {
+        justify-content: space-between;
+        margin: 1rem auto;
+    }
+
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    height: 2rem;
+    p {
+        text-align: center;
+        color: var(--yellow-sweet);
+
+        a {
+            text-decoration: none;
+            color: var(--light-grey);
+
+            &:hover, &:focus {
+                color: var(--yellow-sweet)!important;
+                outline: 1px solid var(--yellow-sweet);
+                outline-offset: 1px;
+            }
+        }
+    }
+}
 @media screen and (max-width: 768px) {
     .flex {
         display: flex;

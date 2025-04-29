@@ -172,11 +172,11 @@ main .border-h2 h3 {
   text-align: center;
   align-items: center;
 }
-main .border-h2 h3 img {
-  width: 45px;
-}
 main .border-h2 .px1 {
   padding-right: 1rem;
+}
+main .border-h2 .px1 img {
+  width: 45px;
 }
 main .border-h2 .px2 {
   font-size: 0.5em;
@@ -195,6 +195,31 @@ main article .flex-date .align-date {
 main article .comp {
   flex: 2;
   margin-left: 2%;
+}
+main #reco_global {
+  justify-content: space-between;
+  margin: 1rem auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+  height: 2rem;
+}
+footer p {
+  text-align: center;
+  color: var(--yellow-sweet);
+}
+footer p a {
+  text-decoration: none;
+  color: var(--light-grey);
+}
+footer p a:hover, footer p a:focus {
+  color: var(--yellow-sweet) !important;
+  outline: 1px solid var(--yellow-sweet);
+  outline-offset: 1px;
 }
 
 @media screen and (max-width: 768px) {
