@@ -28,6 +28,17 @@ body {
 	{
 		display: flex;
 	}
+
+    main, #name {
+        padding: 0 5%;
+    }
+
+    h4 {
+        font-size: 1.2em;
+		margin: 0;
+		padding: 4% 0;
+        color: var(--blue);
+    }
 }
 
 
@@ -102,6 +113,8 @@ header {
 
     .aside {
 
+        margin: 3rem 0;
+
         h3 {
             // background-color: #02310b;
             color: var(--bg-color);
@@ -127,7 +140,7 @@ header {
             justify-content: space-around;
 
             img {
-                border: 2px solid var(--color-txt);
+                border: 2px solid var(--yellow-sweet);
                 width: 50px;
                 height: 50px;
                 text-align: center;
@@ -163,4 +176,53 @@ header {
             font-size: 18px;
         }
     }
+}
+
+main {
+    flex: 2;
+    background: url('../img/fond-livres.png');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+
+    #formations h3, #experience h3, #recom h3 {
+		font-size: 1.3em;
+		padding-top: 3%;
+		margin-top: 0;
+		margin-bottom: 1%;
+		text-transform: uppercase;
+	}
+
+    .border-h2 {
+        border-bottom: 2px solid var(--yellow-sweet);
+		margin-bottom: 2%;
+
+        .px1 {
+            padding-right: 1rem;
+        }
+
+        .px2 {
+            font-size: 0.5em;
+		    padding-right: 1rem;
+        }
+    }
+
+    article {
+		display: flex;
+		flex-direction: row;
+
+        .flex-date {
+            flex: 1;
+
+            .align-date {
+                display: inline-flex;
+            }
+        }
+        .comp {
+            flex: 2;
+		    margin-left: 2%;
+        }
+	}
+
 }
