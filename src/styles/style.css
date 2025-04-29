@@ -12,6 +12,10 @@
   --yellow-sweet: #FFD369;
 }
 
+html {
+  background-color: var(--light-grey);
+}
+
 body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", "verdana", Arial, sans-serif;
   font-size: 1em;
@@ -158,6 +162,14 @@ main .border-h2 {
   border-bottom: 2px solid var(--yellow-sweet);
   margin-bottom: 2%;
 }
+main .border-h2 h3 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+main .border-h2 h3 img {
+  width: 45px;
+}
 main .border-h2 .px1 {
   padding-right: 1rem;
 }
@@ -203,5 +215,25 @@ main article .comp {
   .flex #name {
     width: 100%;
     padding-top: 3%;
+  }
+  .flex #my_contact #contact {
+    text-align: center;
+  }
+  .flex #my_contact .hobbies {
+    margin: 0;
+    padding: 2% 0;
+  }
+  .flex h3 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  .flex h3 img {
+    width: 30px;
+  }
+  .flex article {
+    flex-direction: column;
+    border-bottom: 2px solid var(--yellow-sweet);
+    margin: 0 auto 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */

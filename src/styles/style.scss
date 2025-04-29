@@ -14,6 +14,10 @@
 
 }
 
+html {
+    background-color: var(--light-grey);
+}
+
 // BODY
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'verdana', Arial, sans-serif;
@@ -40,6 +44,7 @@ body {
 		padding: 4% 0;
         color: var(--blue);
     }
+
 }
 
 
@@ -199,6 +204,17 @@ main {
         border-bottom: 2px solid var(--yellow-sweet);
 		margin-bottom: 2%;
 
+        
+        h3 {
+            display: flex;
+            text-align: center;
+            align-items: center;
+
+            img {
+                width: 45px;
+            }
+        }
+
         .px1 {
             padding-right: 1rem;
         }
@@ -255,5 +271,38 @@ main {
             width: 100%;
             padding-top: 3%;
         }
+
+        #my_contact {
+            // order: 3;
+
+            #contact {
+                text-align: center;
+            }
+
+            .hobbies {
+                margin: 0;
+                padding: 2% 0;
+            }
+        }
+
+        h3 {
+            display: flex;
+            text-align: center;
+            align-items: center;
+
+            img {
+                width: 30px;
+            }
+        }
+
+        article {
+            // align-items: center;
+			flex-direction: column;
+            border-bottom: 2px solid var(--yellow-sweet);
+            margin: 0 auto 1.5rem;
+        }
+        // .px1, .px2 {
+		// 	display: none;
+		// }
     }
 }
