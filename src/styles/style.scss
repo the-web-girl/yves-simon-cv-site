@@ -198,7 +198,7 @@ header {
 
 main {
     flex: 2;
-    background: url('../img/fond-livres.png');
+    background: url('../img/fond-livres-compress.webp');
     background-position: center;
     background-size: cover;
     // height: 100vh;
@@ -273,7 +273,7 @@ footer {
         color: var(--yellow-sweet);
 
         a {
-            text-decoration: none;
+            // text-decoration: none;
             color: var(--light-grey);
 
             &:hover, &:focus {
