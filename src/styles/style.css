@@ -151,7 +151,7 @@ header .flex #name h2 #border_dev {
 
 main {
   flex: 2;
-  background: url("../img/fond-livres.png");
+  background: url("../img/fond-livres-compress.webp");
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -213,7 +213,6 @@ footer p {
   color: var(--yellow-sweet);
 }
 footer p a {
-  text-decoration: none;
   color: var(--light-grey);
 }
 footer p a:hover, footer p a:focus {
