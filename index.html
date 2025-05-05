@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yves Simon CV site</title>
+    <title>CV de Yves Simon - Formateur pour adultes</title>
     <meta name="description" content="Curriculum vitae version site web ou vous pouvez découvrir mon parcours professionnel">
     <link rel="stylesheet" href="./src/styles/style.css">
 </head>
 <body>
     <!-- START HEADER -->
-    <header>
+    <header role="banner">
         <div class="flex">
             <div id="head_photo">
                 <div class="vp-photo">
-                    <img src="./src/img/Yves-Simon-Photo-compress.webp" alt="Ma photo d'identité" id="photo">
+                    <img src="./src/img/Yves-Simon-Photo-compress.webp" alt="Portrait d'Yves Simon, Formateur pour adultes" id="photo">
                 </div>
             </div>
 
@@ -22,22 +22,43 @@
                 <h2><span id="border_dev">Formateur</span> pour adulte</h2>
             </div>
         </div>
+		<nav class="sr-only" role="navigation">
+			<a href="#contact">Section contact</a>
+			<a href="#experience">Section expérience</a>
+			<a href="#formations">Section formations</a>
+			<a href="#recom">Section recommandations</a>
+		</nav>
     </header>
     <!-- END HEADER -->
 
     <div class="flex">
         <!-- START ASIDE -->
-        <aside id="my_contact">
+        <aside id="my_contact" aria-label="Informations personnelles">
             <section class="aside" id="contact">
-                <h3>Contact</h3>
-
-                <p><span class="bold">Adresse :</span> <br>30/21 rue du pont de bois <br>59280 Armentières</p>
-                <p><span class="bold">Téléphone :</span> <br>(+33) 06 24 27 57 88</p>
-                <p><span class="bold">E-mail :</span> <br><a href="mailto:yves.s.pro@gmail.com">yves.s.pro@gmail.com</a></p>
-                <p><span class="bold">Mon portfolio :</span><a href="#">bientôt</a></p>
-                <p><span class="bold"><a href="https://www.linkedin.com/in/yves-simon/" target="_blank">LinkedIn</a></span></p>
-                <p><span class="bold">Permis B</span></p>
-                <p><span>RQTH</span></p>
+                <h3 id="contact-title">Contact</h3>
+				<ul>
+					<li>
+						<strong>Adresse :</strong> <br>30/21 rue du pont de bois <br>59280 Armentières
+					</li>
+					<li>
+						<strong>Téléphone :</strong> <br>(+33) 06 24 27 57 88
+					</li>
+					<li>
+						<strong>E-mail :</strong> <br><a href="mailto:yves.s.pro@gmail.com">yves.s.pro@gmail.com</a>
+					</li>
+					<li>
+						<strong>Mon portfolio :</strong> <br><a href="https://www.google.fr" aria-label="Portfolio en construction">Portfolio en construction</a>
+					</li>
+					<li>
+						<strong><a href="https://www.linkedin.com/in/yves-simon/" target="_blank">LinkedIn</a></strong>
+					</li>
+					<li>
+						<strong>Permis B</strong>
+					</li>
+					<li>
+						<strong>RQTH</strong>
+					</li>
+				</ul>
             </section>
 
             <section class="aside flex-grow">
@@ -50,34 +71,46 @@
                 <h3>Soft skills</h3>
 
                 <ul>
-                    <li>Adaptation au poste</li>
-                    <li>Pédagogue</li>
-                    <li>Curieux</li>
-                    <li>Dynamique</li>
-                    <li>Autonome</li>
-                    <li>Organisé</li>
-                    <li>Persévérant</li>
-                    <li>Travail d'équipe</li>
+					<li>Être à l'écoute, avoir de l'empathie</li>
+					<li>Faire preuve de rigueur et de précision</li>
+					<li>S'adapter au changement</li>
+					<li>S'adapter rapidement à un nouveau poste</li>
+					<li>Transmettre les connaissances avec pédagogie</li>
+					<li>Faire preuve de curiosité intellectuelle</li>
+					<li>Montrer de l’énergie et de l’enthousiasme</li>
+					<li>Travailler de manière autonome</li>
+					<li>Organiser efficacement son travail</li>
+					<li>Faire preuve de persévérance face aux obstacles</li>
+					<li>Collaborer efficacement en équipe</li>
                 </ul>
             </section>
 
             <section class="aside">
                 <h3>Loisirs</h3>
                 <div class="hobbies">
-                    <img src="https://img.icons8.com/cute-clipart/64/nintendo-switch-pro-controller.png" alt="Faire une partie de jeux vidéo pour me vider la tête">
-                    <img src="https://img.icons8.com/cute-clipart/64/headphones.png" alt="écouter de la musique">
-                    <img src="https://img.icons8.com/clouds/100/walking.png" alt="Faire de la marche, promenade">
+                    <div>
+						<img src="https://img.icons8.com/cute-clipart/64/nintendo-switch-pro-controller.png" alt="" aria-hidden="true">
+						<p class="sr-only">Faire une partie de jeux vidéo pour me vider la tête</p>
+					</div>
+					<div>
+						<img src="https://img.icons8.com/cute-clipart/64/headphones.png" alt="" aria-hidden="true">
+						<p class="sr-only">écouter de la musique</p>
+					</div>
+                    <div>
+						<img src="https://img.icons8.com/clouds/100/walking.png" alt="" aria-hidden="true">
+						<p class="sr-only">Faire de la marche, promenade</p>
+					</div>
                 </div>
             </section>
         </aside>
         <!-- END ASIDE -->
 
         <!-- START MAIN -->
-        <main>
+        <main role="main">
             <!-- START XP SECTION -->
             <section id="experience">
 				<div class="border-h2">
-					<h3><span class="px1"><img src="https://img.icons8.com/clouds/100/briefcase.png" alt=""></span>Expériences</h3>
+					<h3><span class="px1"><img src="https://img.icons8.com/clouds/100/briefcase.png" alt="" aria-hidden="true"></span>Expériences</h3>
 				</div>
 
                 <article>
@@ -89,7 +122,7 @@
 					<div class="comp">
 						<h4>ID Formation</h4>
 						<p>Stagiaire (PMSMP)</p>
-						<p>J'ai effectué une période de mise en situation professionnel (PMSMP) pour le poste de formateur pour adulte, dans l'optique d'effectuer la formation.</p>
+						<p>J'ai effectué une période de mise en situation professionnel (PMSMP) pour le poste de formateur pour adulte, dans l'optique d'effectué la formation.</p>
 					</div>
 				</article>
 
@@ -121,7 +154,7 @@
 						<h4>EPSM Lille Métropole</h4>
 						<p>Jardinier Paysagiste Stagiaire</p>
 						<p>Stage effetué à l'EPSM d'Armentières durant ma formation de Jardinier Paysagiste au CFPPA-des Flandres.
-						J'ai pu effectuer l'entretien de la zone arbustive, des massifs floraux 
+						J'ai pu effectué l'entretien de la zone arbustive, des massifs floraux 
 						comprenant la taille de rosiers, de lauriers, d'aucuba...
 						L'entretien de la zone minérale, le ramassage des déchets verts.</p>
 					</div>
@@ -136,7 +169,7 @@
 					<div class="comp">
 						<h4>Le champs des reinettes</h4>
 						<p>Maraîcher Bio Stagiaire</p>
-						<p>Stage effectuer durant ma formation de validation de projet professionnel avec le Dispositif AdEMA, Genech.
+						<p>Stage effectué durant ma formation de validation de projet professionnel avec le Dispositif AdEMA, Genech.
 						J'ai pu effectué La cueillette des récoltes, l'entretien de la zone des futures récoltes, 
 						l'entretien du matériel, la préparation des produits de la production pour la vente.</p>
 					</div>
@@ -151,7 +184,7 @@
 					<div class="comp">
 						<h4>Ferme du Pont d’Achelles</h4>
 						<p>Ouvrier Agricole Stagiaire</p>
-						<p>J'ai pu effectuer durant ce stage l'entretien de la zone de récoltes, le désherbage.</p>
+						<p>J'ai pu effectué durant ce stage l'entretien de la zone de récoltes, le désherbage.</p>
 					</div>
 				</article>
             </section>
@@ -160,7 +193,7 @@
             <!-- START FORMATIONS SECTION -->
             <section id="formations">
                 <div class="border-h2">
-					<h3><span class="px1"><img src="https://img.icons8.com/clouds/100/prize.png" alt=""></span>Formations</h3>
+					<h3><span class="px1"><img src="https://img.icons8.com/clouds/100/prize.png" alt="" aria-hidden="true"></span>Formations</h3>
 				</div>
 
 				<article>
@@ -265,7 +298,7 @@
     </div>
 
     <!-- START FOOTER -->
-    <footer>
+    <footer role="contentinfo">
         <p>© 2025 - <a href="https://inta11ysolutions.org/">IntA11Y - Solutions</a> - tous droits réservés</p>
     </footer>
     <!-- END FOOTER -->
